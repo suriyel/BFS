@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BFS
-{
+{  
     public class BFSSearch<T>
     {
         private T[,] m_Map;
@@ -31,6 +31,7 @@ namespace BFS
             
             var result=new List<IPoint>();
             var queue = new Queue<Point>();
+            
             queue.Enqueue(startPoint);
 
             while (queue.Count>0)
